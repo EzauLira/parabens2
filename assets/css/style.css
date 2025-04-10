@@ -1,0 +1,221 @@
+/* ESTILO GERAL */
+body {
+    background: linear-gradient(120deg, #6c11c0, #000000 70%);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(120deg, #4c1b7c, #1c0127 70%);
+    border-radius: 30px;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container2 {
+    max-width: 1000px;
+    width: 100%;
+    min-height: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 50px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Permite que os elementos se ajustem em linhas */
+}
+
+.container-mensagem {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-family: Courier;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* GALERIA DE IMAGENS */
+.carousel {
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    /* Esconde o conteúdo que ultrapassa o contêiner */
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.9s ease-in-out;
+}
+
+.carousel-container img {
+    min-width: 100%;
+    /* Garante que cada imagem ocupe toda a largura do carrossel */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    object-fit: cover;
+    /* Garante que a imagem cubra o espaço sem distorções */
+    flex-shrink: 0;
+    /* Impede que as imagens sejam comprimidas */
+}
+
+#contador {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    margin-top: -25px;
+}
+
+/* ANIMAÇÃO DE CORAÇÃO */
+.heart {
+    position: fixed;
+    bottom: -50px;
+    font-size: 24px;
+    color: red;
+    animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+/* RESPONSIVIDADE PARA TELAS MENORES */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 90%;
+    }
+
+    .carousel-container img {
+        min-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        max-width: 100%;
+    }
+
+    .carousel-container img {
+        min-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .carousel {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    #contador {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 95%;
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    .container2 {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    #contador {
+        font-size: 1.2rem;
+    }
+
+    .carousel {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .carousel-container img {
+        width: 100%;
+        height: auto;
+    }
+}
