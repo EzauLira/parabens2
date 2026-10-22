@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#21082f">
+    <title>Feliz 3 meses ❤️</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <header class="container">
+            <p class="eyebrow">NOSSA HISTÓRIA</p>
+            <h1>❤️ Celebrando o nosso amor de três meses ❤️</h1>
+            <p id="contador" aria-live="off">Calculando nosso tempo juntos…</p>
+        </header>
+
+        <section class="container2" aria-label="Nossa lembrança de três meses">
+            <div class="carousel" aria-label="Galeria de fotos">
+                <div class="carousel-container">
+                    <img src="assets/images/img01.jpeg" alt="Nossa foto 1" fetchpriority="high">
+                    <img src="assets/images/img02.jpeg" alt="Nossa foto 2" loading="lazy">
+                    <img src="assets/images/img03.jpeg" alt="Nossa foto 3" loading="lazy">
+                    <img src="assets/images/img03.1.jpeg" alt="Nossa foto 4" loading="lazy">
+                    <img src="assets/images/img04.jpeg" alt="Nossa foto 5" loading="lazy">
+                    <img src="assets/images/img05.jpeg" alt="Nossa foto 6" loading="lazy">
+                    <img src="assets/images/img06.jpeg" alt="Nossa foto 7" loading="lazy">
+                    <img src="assets/images/img07.jpeg" alt="Nossa foto 8" loading="lazy">
+                    <img src="assets/images/img07.1.jpeg" alt="Nossa foto 9" loading="lazy">
+                    <img src="assets/images/img08.jpeg" alt="Nossa foto 10" loading="lazy">
+                    <img src="assets/images/img09.jpeg" alt="Nossa foto 11" loading="lazy">
+                    <img src="assets/images/img10.jpeg" alt="Nossa foto 12" loading="lazy">
+                    <img src="assets/images/img11.jpeg" alt="Nossa foto 13" loading="lazy">
+                </div>
+                <button class="carousel-button previous" type="button" aria-label="Foto anterior">‹</button>
+                <button class="carousel-button next" type="button" aria-label="Próxima foto">›</button>
+                <div class="carousel-footer">
+                    <span class="photo-count" aria-live="polite">01 / 13</span>
+                    <div class="carousel-dots" aria-label="Escolher foto"></div>
+                </div>
+            </div>
+
+            <article class="container-mensagem">
+                <h2 class="message-heading">Minha red velvet <span aria-hidden="true">❤️</span></h2>
+                <p>Hoje celebramos não apenas 3 meses juntos, mas 3 meses de uma jornada que tem sido a mais bonita e
+                    significativa da minha vida. Foram dias de risadas, de abraços apertados, de conversas sem fim e, sim,
+                    também de lutas. Mas saiba que cada desafio que enfrentamos só nos fez mais fortes, mais unidos e ainda
+                    mais apaixonado por você.</p>
+                <p>Quero que saiba que, independentemente do que o futuro nos reserve, estarei sempre ao seu lado.
+                    Obrigado por ser minha companheira, minha melhor amiga, meu tudo.
+                    Estou tão grato por ter você ao meu lado, e mal posso esperar para viver todos os próximos capítulos
+                    dessa história linda com você.</p>
+                <p>Amo você, mais até do que as palavras podem expressar, e sei que esse sentimento só vai
+                    continuar crescendo.
+                    Que venham muitos mais meses, anos e se acontecer uma vida inteira. ❤️</p>
+                <div class="signature">Com amor, para nós. <span>♥</span></div>
+            </article>
+        </section>
+        <section class="music-card" aria-label="Nossa música">
+            <div class="music-intro">
+                <p class="music-kicker">UM PEDACINHO DA NOSSA HISTÓRIA</p>
+                <h2>Nossa música <span aria-hidden="true">♥</span></h2>
+                <p>A trilha sonora da nossa história.</p>
+            </div>
+            <div class="music-player">
+                <div class="album-art" aria-label="Capa ilustrativa de Modo Absurdo">
+                    <span class="album-artist">FERRUGEM</span>
+                    <span class="album-note" aria-hidden="true">♫</span>
+                    <span class="album-title">MODO<br>ABSURDO</span>
+                </div>
+                <div class="track-details">
+                    <strong>Modo Absurdo</strong>
+                    <span>Ferrugem</span>
+                    <audio id="our-song" src="assets/audio/Ferrugem-Modo-Absurdo.mp3" preload="auto" autoplay></audio>
+                    <div class="track-progress">
+                        <span id="current-time">0:00</span>
+                        <input id="song-progress" type="range" min="0" max="100" value="0" aria-label="Progresso da música">
+                        <span id="duration">0:00</span>
+                    </div>
+                    <div class="audio-controls">
+                        <button id="music-toggle" class="music-toggle" type="button" aria-label="Tocar nossa música">▶</button>
+                        <span id="music-status" aria-live="polite">Tentando tocar…</span>
+                        <label class="volume-control" aria-label="Volume">♫ <input id="song-volume" type="range" min="0" max="1" step="0.05" value="0.8" aria-label="Volume da música"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">Feito com carinho, para celebrar a nossa história. ♥</footer>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
